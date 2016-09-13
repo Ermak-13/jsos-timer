@@ -3,7 +3,7 @@ var Widget = require('./widget'),
     locales = require('./locales');
 
 global.I18n.registryDict(locales);
-global.OS.installModule('Timer2',{
+global.OS.installModule('Timer',{
   Widget: Widget,
   Shortcut: Shortcut
 });
