@@ -1,7 +1,9 @@
 var Widget = require('./widget'),
-    Shortcut = require('./shortcut');
+    Shortcut = require('./shortcut'),
+    locales = require('./locales');
 
-OS.installModule('TODO', {
+global.I18n.registryDict(locales);
+global.OS.installModule('Timer2',{
   Widget: Widget,
   Shortcut: Shortcut
 });
